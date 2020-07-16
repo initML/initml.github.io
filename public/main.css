@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Poppins', Roboto, Helvetica;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(334.24deg, #140343 18.01%, #000000 83.39%);
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+a {
+  color: white;
+}
+
+main {
+  text-align: center;
+}
+
+h4 {
+  font-weight: normal;
+  max-width: 380px;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.links {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.contactus {
+  margin-top: 3em;
+}
+
+.button {
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 0.5em 1.5em;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+footer {
+  font-size: 0.75em;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 1em;
+}
+
+
+.social {
+  margin-top: 3em;
+}
+
+.bt-icon {
+  text-decoration: none;
+  margin: 1em;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.bt-icon:hover {
+  opacity: 1;
+}
+
+/* Links */
+
+
+.link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.link-wrapper {
+  position: relative;
+  display: block;
+  padding: 10px 0;
+}
+
+.inner-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.wrapper-16:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: white;
+  transform: scaleY(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s;
+}
+.wrapper-16:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background-color: white;
+  transform: scaleY(0);
+  transform-origin: top right;
+  transition: transform 0.3s;
+}
+.wrapper-16 .hover-16 {
+  padding: 10px;
+}
+.wrapper-16 .hover-16:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s;
+}
+.wrapper-16 .hover-16:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s;
+}
+.wrapper-16:hover:before, .wrapper-16:hover:after {
+  transform: scaleY(1);
+}
+.wrapper-16:hover .hover-16:before, .wrapper-16:hover .hover-16:after {
+  transform: scaleX(1);
+}
