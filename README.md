@@ -1,3 +1,3 @@
 # Homepage
 
-https://init.ml
+https://initml.co
